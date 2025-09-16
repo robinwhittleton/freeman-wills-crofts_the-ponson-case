@@ -1,2 +1,18 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+
+/* Maker’s mark */
+#chapter-8 > p:nth-child(52) > span{
+	display: inline-block;
+	font-size: .5em;
+	text-indent: 0;
+	vertical-align: middle;
+}
+
+#chapter-8 > p:nth-child(52) > span > span{
+	display: block;
+}
+
+#chapter-8 > p:nth-child(52) > span > span:first-child{
+	border-bottom: 1px solid;
+}
