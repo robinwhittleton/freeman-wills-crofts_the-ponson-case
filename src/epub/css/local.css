@@ -1,6 +1,32 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header{
+	font-style: italic;
+	font-variant: normal;
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:salutation"],
+[epub|type~="z3998:sender"]{
+	font-variant: small-caps;
+}
+
 /* Maker’s mark */
 #chapter-8 > p:nth-child(52) > span{
 	display: inline-block;
